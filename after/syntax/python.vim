@@ -8,7 +8,9 @@ syntax clear pythonOperator
 
 syntax match pythonOperator "\<is\>"
 
+syntax match pyNiceOperator "\<for\>" conceal cchar=∀
 syntax match pyNiceOperator "\<in\>" conceal cchar=∈
+syntax match pyNiceOperator "\<return\>" conceal cchar=⇥
 syntax match pyNiceOperator "\<or\>" conceal cchar=∨
 syntax match pyNiceOperator "\<and\>" conceal cchar=∧
 " include the space after “not” – if present – so that “not a” becomes “¬a”.
@@ -24,6 +26,8 @@ syntax match pyNiceOperator "!=" conceal cchar=≢
 syntax keyword pyNiceOperator sum conceal cchar=∑
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
 syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
+syntax match pyNiceOperator "\<\True\>" conceal cchar=⊤
+syntax match pyNiceOperator "\<\False\>" conceal cchar=⊥
 
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 
